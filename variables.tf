@@ -18,12 +18,17 @@ variable "availability_zone" {
   default = "us-east-1a"
 }
 
+variable "public_key_path" {
+  description = "Path to the public key file"
+  default     = "C:/Users/yangk/Downloads/keyPair.pub"
+}
+
 variable "linux_instance_type" {
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "windows_instance_type" {
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "linux_ami" {
