@@ -3,15 +3,19 @@ variable "region" {
 }
 
 variable "vpc_cidr" {
-  default = "10.0.0.0/16"
+  default = "10.0.0.0/24"
 }
 
 variable "public_subnet_cidr" {
-  default = "10.0.1.0/24"
+  default = "10.0.0.0/28"
 }
 
 variable "private_subnet_cidr" {
-  default = "10.0.2.0/24"
+  default = "10.0.0.128/28"
+}
+
+variable "availability_zone" {
+  default = "us-east-1a"
 }
 
 variable "linux_instance_type" {
